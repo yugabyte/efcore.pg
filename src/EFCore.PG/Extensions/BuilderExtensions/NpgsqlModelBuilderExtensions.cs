@@ -1,6 +1,6 @@
 ﻿using Npgsql.EntityFrameworkCore.PostgreSQL.Metadata;
 using Npgsql.EntityFrameworkCore.PostgreSQL.Metadata.Internal;
-using Npgsql.NameTranslation;
+using YBNpgsql.NameTranslation;
 
 // ReSharper disable once CheckNamespace
 namespace Microsoft.EntityFrameworkCore;

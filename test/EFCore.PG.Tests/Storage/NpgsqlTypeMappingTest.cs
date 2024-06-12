@@ -9,7 +9,7 @@ using Microsoft.EntityFrameworkCore.Storage.Json;
 using Npgsql.EntityFrameworkCore.PostgreSQL.Internal;
 using Npgsql.EntityFrameworkCore.PostgreSQL.Storage.Internal;
 using Npgsql.EntityFrameworkCore.PostgreSQL.Storage.Internal.Mapping;
-using Npgsql.NameTranslation;
+using YBNpgsql.NameTranslation;
 
 namespace Npgsql.EntityFrameworkCore.PostgreSQL.Storage;
 

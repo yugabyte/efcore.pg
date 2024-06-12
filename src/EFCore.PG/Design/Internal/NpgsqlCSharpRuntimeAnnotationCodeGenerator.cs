@@ -67,7 +67,7 @@ public class NpgsqlCSharpRuntimeAnnotationCodeGenerator : RelationalCSharpRuntim
                     $"{parameters.TargetName}.TypeMapping = (({typeMapping.GetType().Name}){parameters.TargetName}.TypeMapping).Clone(npgsqlDbType: ");
 
                 mainBuilder
-                    .Append(nameof(NpgsqlTypes))
+                    .Append(nameof(YBNpgsqlTypes))
                     .Append(".")
                     .Append(nameof(NpgsqlDbType))
                     .Append(".")
@@ -109,7 +109,7 @@ public class NpgsqlCSharpRuntimeAnnotationCodeGenerator : RelationalCSharpRuntim
 
                     mainBuilder
                         .Append("npgsqlDbType: ")
-                        .Append(nameof(NpgsqlTypes))
+                        .Append(nameof(YBNpgsqlTypes))
                         .Append(".")
                         .Append(nameof(NpgsqlDbType))
                         .Append(".")
