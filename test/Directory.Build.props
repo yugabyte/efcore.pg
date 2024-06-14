@@ -16,7 +16,7 @@
     <PackageReference Include="xunit" />
     <PackageReference Include="xunit.runner.visualstudio" />
     <PackageReference Include="GitHubActionsTestLogger" />
-    <PackageReference Include="Npgsql" />
+    <PackageReference Include="NpgsqlYugabyteDB" />
   </ItemGroup>
 
   <ItemGroup>

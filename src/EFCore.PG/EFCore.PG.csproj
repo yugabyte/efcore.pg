@@ -16,7 +16,7 @@
     <PackageReference Include="Microsoft.EntityFrameworkCore" PrivateAssets="none" />
     <PackageReference Include="Microsoft.EntityFrameworkCore.Relational" PrivateAssets="none" />
     <PackageReference Include="Microsoft.EntityFrameworkCore.Abstractions" PrivateAssets="none" />
-    <PackageReference Include="Npgsql" />
+    <PackageReference Include="NpgsqlYugabyteDB" />
   </ItemGroup>
 
   <ItemGroup>

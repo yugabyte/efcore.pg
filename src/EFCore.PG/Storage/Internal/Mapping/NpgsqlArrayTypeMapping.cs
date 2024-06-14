@@ -186,7 +186,7 @@ public class NpgsqlArrayTypeMapping<TCollection, TConcreteCollection, TElement> 
         // If the element mapping has an NpgsqlDbType or DbType, set our own NpgsqlDbType as an array of that.
         // Otherwise let the ADO.NET layer infer the PostgreSQL type. We can't always let it infer, otherwise
         // when given a byte[] it will infer byte (but we want smallint[])
-        NpgsqlDbType = NpgsqlTypes.NpgsqlDbType.Array
+        NpgsqlDbType = YBNpgsqlTypes.NpgsqlDbType.Array
             | (ElementTypeMapping is INpgsqlTypeMapping elementNpgsqlTypeMapping
                 ? elementNpgsqlTypeMapping.NpgsqlDbType
                 : ElementTypeMapping.DbType.HasValue
