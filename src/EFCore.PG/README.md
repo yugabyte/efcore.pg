@@ -1,6 +1,6 @@
-# Npgsql Entity Framework Core provider for PostgreSQL
+# Npgsql Entity Framework Core provider for YugabyteDB
 
-Npgsql.EntityFrameworkCore.PostgreSQL is the open source EF Core provider for PostgreSQL. It allows you to interact with PostgreSQL via the most widely-used .NET O/RM from Microsoft, and use familiar LINQ syntax to express queries. It's built on top of [Npgsql](https://github.com/npgsql/npgsql).
+Npgsql.EntityFrameworkCore.YugabyteDB is the open source EF Core provider for YugabyteDB. It allows you to interact with YugabyteDB via the most widely-used .NET O/RM from Microsoft, and use familiar LINQ syntax to express queries. It's built on top of [NpgsqlYugabyteDB](https://github.com/yugabyte/npgsql).
 
 The provider looks and feels just like any other Entity Framework Core provider. Here's a quick sample to get you started:
 
@@ -21,7 +21,7 @@ public class BlogContext : DbContext
     public DbSet<Blog> Blogs { get; set; }
 
     protected override void OnConfiguring(DbContextOptionsBuilder optionsBuilder)
-        => optionsBuilder.UseNpgsql(@"Host=myserver;Username=mylogin;Password=mypass;Database=mydatabase");
+        => optionsBuilder.UseNpgsql(@"Host=myserver;Username=mylogin;Password=mypass;Database=mydatabase;Load Balance Hosts=true;Topology Keys=cloud1.datacenter1.rack1;Timeout=0;");
 }
 
 public class Blog
@@ -31,5 +31,4 @@ public class Blog
 }
 ```
 
-Aside from providing general EF Core support for PostgreSQL, the provider also exposes some PostgreSQL-specific capabilities, allowing you to query JSON, array or range columns, as well as many other advanced features. For more information, see the [the Npgsql site](http://www.npgsql.org/efcore/index.html). For information about EF Core in general, see the [EF Core website](https://docs.microsoft.com/ef/core/).
-
+Aside from providing general EF Core support for YugabyteDB, the provider also exposes some PostgreSQL-specific capabilities, allowing you to query JSON, array or range columns, as well as many other advanced features.

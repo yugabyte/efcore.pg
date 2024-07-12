@@ -1,8 +1,8 @@
-# Npgsql Entity Framework Core provider for PostgreSQL
+# Npgsql Entity Framework Core provider for YugabyteDB
 
-Npgsql.EntityFrameworkCore.PostgreSQL is the open source EF Core provider for PostgreSQL. It allows you to interact with PostgreSQL via the most widely-used .NET O/RM from Microsoft, and use familiar LINQ syntax to express queries.
+Npgsql.EntityFrameworkCore.YugabyteDB is the open source EF Core provider for YugabyteDB. It allows you to interact with YugabyteDB via the most widely-used .NET O/RM from Microsoft, and use familiar LINQ syntax to express queries.
 
-This package is a plugin which allows you to use the [NodaTime](https://nodatime.org) date/time library when interacting with PostgreSQL; this provides a better and safer API for dealing with date and time data.
+This package is a plugin which allows you to use the [NodaTime](https://nodatime.org) date/time library when interacting with YugabyteDB; this provides a better and safer API for dealing with date and time data.
 
 To use the plugin, simply add `UseNodaTime` as below and use NodaTime types in your entity properties:
 
@@ -28,7 +28,7 @@ public class BlogContext : DbContext
 
     protected override void OnConfiguring(DbContextOptionsBuilder optionsBuilder)
         => optionsBuilder.UseNpgsql(
-            @"Host=myserver;Username=mylogin;Password=mypass;Database=mydatabase",
+            @"Host=myserver;Username=mylogin;Password=mypass;Database=mydatabase;Load Balance Hosts=true;Topology Keys=cloud1.datacenter1.rack1;Timeout=0;",
             o => o.UseNodaTime());
 }
 
@@ -40,4 +40,4 @@ public class Blog
 }
 ```
 
-The plugin also supports translating most NodaTime methods and properties into corresponding PostgreSQL date/time operations. For more information, see the [NodaTime plugin documentation page](https://www.npgsql.org/efcore/mapping/nodatime.html).
+The plugin also supports translating most NodaTime methods and properties into corresponding YugabyteDB date/time operations. For more information, see the [NodaTime plugin documentation page](https://www.npgsql.org/efcore/mapping/nodatime.html).

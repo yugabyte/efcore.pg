@@ -1,12 +1,12 @@
 <Project Sdk="Microsoft.NET.Sdk">
   <PropertyGroup>
-    <AssemblyName>Npgsql.EntityFrameworkCore.YugabyteDB.NodaTime</AssemblyName>
+    <AssemblyName>NpgsqlYB.EntityFrameworkCore.YugabyteDB.NodaTime</AssemblyName>
     <RootNamespace>Npgsql.EntityFrameworkCore.PostgreSQL.NodaTime</RootNamespace>
     <TargetFramework>net8.0</TargetFramework>
     <TargetFramework Condition="'$(DeveloperBuild)' == 'True'">net8.0</TargetFramework>
 
-    <Authors>Shay Rojansky</Authors>
-    <Description>NodaTime support plugin for PostgreSQL/Npgsql Entity Framework Core provider.</Description>
+    <Authors>Shay Rojansky;Sfurti Sarah</Authors>
+    <Description>NodaTime support plugin for YugabyteDB/NpgsqlYugabyteDB Entity Framework Core provider.</Description>
     <PackageTags>npgsql;postgresql;postgres;Entity Framework Core;entity-framework-core;ef;efcore;orm;sql;nodatime;date;time</PackageTags>
     <PackageReadmeFile>README.md</PackageReadmeFile>
   </PropertyGroup>
