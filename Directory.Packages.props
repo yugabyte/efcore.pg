@@ -17,9 +17,9 @@
     <PackageVersion Include="Microsoft.Extensions.Logging" Version="$(MicrosoftExtensionsVersion)" />
 
     <PackageVersion Include="NpgsqlYugabyteDB" Version="$(NpgsqlVersion)" />
-    <PackageVersion Include="Npgsql.NodaTime" Version="$(NpgsqlVersion)" />
-    <PackageVersion Include="Npgsql.NetTopologySuite" Version="$(NpgsqlVersion)" />
-    <PackageVersion Include="Npgsql.DependencyInjection" Version="$(NpgsqlVersion)" />
+    <PackageVersion Include="YBNpgsql.NodaTime" Version="$(NpgsqlVersion)" />
+    <PackageVersion Include="YBNpgsql.NetTopologySuite" Version="$(NpgsqlVersion)" />
+    <PackageVersion Include="YBNpgsql.DependencyInjection" Version="$(NpgsqlVersion)" />
 
     <PackageVersion Include="Microsoft.SourceLink.GitHub" Version="8.0.0" />
     <PackageVersion Include="Microsoft.NET.Test.Sdk" Version="17.8.0" />
