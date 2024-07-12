@@ -16,7 +16,7 @@
   </ItemGroup>
 
   <ItemGroup>
-    <PackageReference Include="Npgsql.NetTopologySuite" />
+    <PackageReference Include="YBNpgsql.NetTopologySuite" />
   </ItemGroup>
 
   <ItemGroup>
